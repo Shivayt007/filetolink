@@ -16,8 +16,8 @@ routes = web.RouteTableDef()
 async def root_route_handler(request):
     bot_details = await StreamBot.get_me()
     return web.json_response({"status": "running",
-                              "maintained_by": "Avishkar_Patil",
-                              "server_permission": "Open",
+                              "maintained_by": "Race_Developers",
+                              "server_permission": "Closed By Rd_Hash",
                               "Telegram_Bot": '@'+bot_details.username})
 
 
